@@ -75,19 +75,39 @@ public class World
         {
         else if (row = 20 && col = 0) 
         {
-            
+        	if (world[row] = 19 && world[col] = 0) neighbors ++;
+            else neighbors = neighbors;
+            if (world[row] = 19 && world[col] = 1) neighbors ++;
+            else neighbors = neighbors;
+            if (world[row] = 20 && world[col] = 1) neighbors ++;
+            else neighbors = neighbors;
         }
         else if (row = 0 && col = 20) 
         {
-            
+        	if (world[row] = 0 && world[col] = 19) neighbors ++;
+            else neighbors = neighbors;
+            if (world[row] = 1 && world[col] = 19) neighbors ++;
+            else neighbors = neighbors;
+            if (world[row] = 0 && world[col] = 20) neighbors ++;
+            else neighbors = neighbors;
         }
         else if (row = 20 && col = 20) 
         {
-            
+        	if (world[row] = 19 && world[col] = 20) neighbors ++;
+            else neighbors = neighbors;
+            if (world[row] = 19 && world[col] = 19) neighbors ++;
+            else neighbors = neighbors;
+            if (world[row] = 20 && world[col] = 19) neighbors ++;
+            else neighbors = neighbors;
         }
         else if (row = 0 && col != 0 && col != 20) 
         {
-            
+        	if (world[row] = 1 && world[col] = 0) neighbors ++;
+            else neighbors = neighbors;
+        	if (world[row] = 1 && world[col] = 1) neighbors ++;
+            else neighbors = neighbors;
+        if (world[row] = 0 && world[col] = 1) neighbors ++;
+            else neighbors = neighbors;
         }
         else if (row = 20 && col != 0 && col != 20) 
         {
