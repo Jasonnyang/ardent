@@ -16,7 +16,7 @@ public class TestDeck
         System.out.println( "Dealt card: " + c1 );
         
         System.out.println ("Displaying deck after selction sort");
-        d.selectionShuffle();
+        d.pileShuffle();
         System.out.println ( d );
 
     }
